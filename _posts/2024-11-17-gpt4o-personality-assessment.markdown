@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I tested gpt-4o on a personality assessment. INFJ?"
+title: "GPT-4o's Personality Revealed: An INFJ in the Machine?"
 date: 2024-11-17 01:52:36 -0500
 categories: llm mbti
 ---
