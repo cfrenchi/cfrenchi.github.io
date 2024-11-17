@@ -104,16 +104,16 @@ Total run time was ~50 minutes. I added in a sleep for 1 sec after each question
 
 Of the 69 questions, only 10 had a back and forth with answers. A few questions stirred up some indecision,see below for a snapshot of GPT-4o's moments of doubt.
 
-![Image]({{ site.baseurl }}/assets/images/variation.png)
+![Image]({{ site.baseurl }}/images/variation.png)
 
 In the chart below, you can see how responses varied for a handful of questions. Each row represents a question, with the colored bars showing the frequency of differing answers.
 
-![Image]({{ site.baseurl }}/assets/images/test1_results.png)
+![Image]({{ site.baseurl }}/images/test1_results.png)
 
 #### Scoring Process
 Implementing the scoring was fun. It is an interesting way to calculate something and based on the assessment used, it shows a personality type of INFJ. In MBTI scoring, some traits (like Introversion vs. Extroversion) are derived by aggregating related columns. This made calculating the final type surprisingly fun.
 
-![Image]({{ site.baseurl }}/assets/images/tabulating_results.png)
+![Image]({{ site.baseurl }}/images/tabulating_results.png)
 
 # **Followup**
 While this experiment was a fun dive into GPT-4o's 'personality,' it opens the door to deeper questions: What does variability in AI responses mean? Can AI personality models be consistent? Or does the real personality lie in how we interpret it? Food for thought—and perhaps another blog.
