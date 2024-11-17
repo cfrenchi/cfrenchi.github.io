@@ -90,7 +90,7 @@ An answer to the question: Only "a" or "b"
 {% endhighlight %}
 
 #### Data Collection & Costs
-Each iteration was saved and can be found in the `results/test1/` folder, and a final object was created with everything in at saved as `data/test1_llm_results.json`.
+Each iteration was saved and can be found in the `results/test1/` folder, and a final object was created with everything in at saved as `results/test1_llm_results.json`.
 
 Total cost to run all 30 \* 69 = 2070 calls was 0.86 usd. Not bad for under a dollar.
 
