@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Adding Blender Renders into Python Notebooks with bpy"
+title: "Adding Blender Renderings into Python Notebooks with bpy"
 date: 2024-11-23 01:52:36 -0500
 categories: notebooks
 ---
