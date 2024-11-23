@@ -19,8 +19,7 @@ This approach allowed me to make a gif from an animation rendering in a pretty c
 
 
 ## Blender Python Module
-We will be using the Blender Foundation's Blender Python Module, [`bpy`](https://pypi.org/project/bpy/
-). 
+We will be using the Blender Foundation's Blender Python Module, [`bpy`](https://pypi.org/project/bpy/). This module allows us to control the Blender instance running through python. 
 
 Note: to get this to work you currently need 3.11.*
 
@@ -57,6 +56,8 @@ After installation, I restarted the notebook kernel and Blender opened.
 
 
 ## Blender in a notebook
+With `bpy` you have access to the full access to the [Blender Python API](https://docs.blender.org/api/current/index.html). We will step through examples of rendering a simple rigged model.
+
 ```python
 # Import the Blender Python Module
 import bpy
@@ -75,7 +76,7 @@ bpy.ops.wm.open_mainfile(filepath=file_path)
 
 <br>
 ## Rendering Options
-There are a few different ways to render and show in the notebook:
+There are a few different ways to render and show the results in the notebook:
 
 * as an image
 * as a video
