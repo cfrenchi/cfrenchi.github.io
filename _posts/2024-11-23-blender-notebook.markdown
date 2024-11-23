@@ -74,11 +74,14 @@ bpy.ops.wm.open_mainfile(filepath=file_path)
 </figure>
 
 <br>
+## Rendering Options
 There are a few different ways to render and show in the notebook:
 
 * as an image
 * as a video
 * or as a gif
+
+<br>
 
 ---
 ### Render as an image
@@ -92,6 +95,8 @@ display(Image(filename="./renders/raptor.png"))
   <img src="{{ site.baseurl }}/images/raptor.png" alt="terrible image of a dinosaur">
   <figcaption>Still image from the animation of a realistic dinosaur</figcaption>
 </figure>
+
+<br>
 
 ---
 ### Render as a video
@@ -114,6 +119,8 @@ display(Video(filename=video_path, embed=True))
   <img src="{{ site.baseurl }}/images/raptor.mp4" alt="terrible image of a dinosaur">
   <figcaption>Video from the animation of a realistic dinosaur</figcaption>
 </figure>
+
+<br>
 
 ---
 ### Render as a gif
