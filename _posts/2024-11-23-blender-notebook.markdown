@@ -144,4 +144,4 @@ display(Image(filename=gif_path))
 </figure>
 
 ## Wrap up
-It is pretty cool to see how you can bring Blender into a notebook. Whether you're an animator, researcher, or developer, this tool could add a new dimension to your workflow.
+It is pretty cool to see how you can bring Blender into a notebook. With full access to the Blender Python API, you have the ability to make changes and update your Blender project from your notebook. Whether you're an animator, researcher, or developer, this tool could add a new dimension to your workflow.
