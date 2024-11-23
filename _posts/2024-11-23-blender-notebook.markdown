@@ -63,6 +63,8 @@ There are a few different ways to render and show the results in the notebook:
 
 With `bpy` you have full access to the [Blender Python API](https://docs.blender.org/api/current/index.html). Let's step through examples of rendering a simple rigged model.
 
+Start by loading a blend file with animations. I used a rigged model of a dinosaur animated with keyframes that I created years ago called `raptor1.blend`.
+
 ```python
 # Import the Blender Python Module
 import bpy
