@@ -12,13 +12,13 @@ I recently saw a demo of blender being used inside of a notebook and was really 
 Seeing Blender integrated into a notebook opens up interesting possibilities for data visualization, teaching materials, and quick prototyping in 3D.
 
 
-# Rendering Use Case
+## Rendering Use Case
 With Blender in a notebook, you can embed rendered 3D animations into reports, create visualizations for scientific research, or even use it for creative coding projects.
 
 This approach allowed me to make a gif from an animation rendering in a pretty cool way.
 
 
-# Blender Python Module
+## Blender Python Module
 We will be using the Blender Foundation's Blender Python Module, [`bpy`](https://pypi.org/project/bpy/
 ). 
 
@@ -35,7 +35,7 @@ Meta
 * Requires: Python ==3.11.*
 ```
 
-# Install
+## Install
 Make sure you've created a Python virtual environment (`.venv`) and activated it before running the commands. Learn more about [virtual environments](https://docs.python.org/3/library/venv.html).
 
 We’ll install `bpy` and `blender_notebook`. The `blender_notebook` package sets up a Jupyter kernel that links a specific Blender instance to the notebook.
@@ -56,7 +56,7 @@ After installation, I restarted the notebook kernel and Blender opened.
 </figure>
 
 
-# Blender in a notebook
+## Blender in a notebook
 ```python
 # Import the Blender Python Module
 import bpy
@@ -81,7 +81,7 @@ There are a few different ways to render and show in the notebook:
 * or as a gif
 
 ---
-## Render as an image
+### Render as an image
 ```python
 # Render and display as an image
 bpy.ops.render.render()
@@ -94,7 +94,7 @@ display(Image(filename="./renders/raptor.png"))
 </figure>
 
 ---
-## Render as a video
+### Render as a video
 ```python
 # Set the render format for the animation
 video_path = "raptor.mp4"
@@ -116,7 +116,7 @@ display(Video(filename=video_path, embed=True))
 </figure>
 
 ---
-## Render as a gif
+### Render as a gif
 ```python
 # Set output format for rendering
 bpy.context.scene.render.image_settings.file_format = 'FFMPEG'
@@ -155,5 +155,5 @@ display(Image(filename=gif_path))
   <figcaption>An awful animated dinosaur that I modelled and rigged years ago.</figcaption>
 </figure>
 
-# Wrap up
+## Wrap up
 It is pretty cool to see how you can bring Blender into a notebook. Whether you're an animator, researcher, or developer, this tool could add a new dimension to your workflow.
