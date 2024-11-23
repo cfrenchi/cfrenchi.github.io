@@ -2,24 +2,21 @@
 layout: post
 title: "Rendering Blender Animations in Python Notebooks Using bpy"
 date: 2024-11-23 01:52:36 -0500
-categories: notebooks
+categories: [notebooks, 3d, python]
+tags: [Blender, bpy, Python, Jupyter Notebooks, 3D Rendering, Animation, Data Visualization]
+summary: "Learn how to integrate Blender renderings into Python notebooks using the bpy library. This guide covers installation, rendering, and visualization options for bringing 3D renders into notebooks."
+
 ---
 
 I recently saw a demo of blender being used inside of a notebook and was really impressed.
 
-[kolibril13](https://kolibril13.github.io/bpy-gallery/n0getting_started/) put together a great doc outlining what this process looks like and had to share.
+[kolibril13](https://kolibril13.github.io/bpy-gallery/n0getting_started/) put together a great doc outlining what this process looks like from installation to examples.
 
-Seeing Blender integrated into a notebook opens up interesting possibilities for data visualization, teaching materials, and quick prototyping in 3D.
-
-
-## Rendering Use Case
-With Blender in a notebook, you can embed rendered 3D animations into reports, create visualizations for scientific research, or even use it for creative coding projects.
-
-This approach allowed me to make a gif from an animation rendering in a pretty cool way.
+This blog will look at the different ways to display your renders in your notebook. We will cover what the Blender Python Module is, installation, and some of the rendering options available.
 
 
 ## Blender Python Module
-We will be using the Blender Foundation's Blender Python Module, [`bpy`](https://pypi.org/project/bpy/). This module allows us to control the Blender instance running through python. 
+We will be using the Blender Foundation's Blender Python Module, [`bpy`](https://pypi.org/project/bpy/). This module allows us to control the Blender instance running through python and what we will be using to trigger our renderings. 
 
 Note: to get this to work you currently need 3.11.*
 
@@ -55,8 +52,16 @@ After installation, I restarted the notebook kernel and Blender opened.
 </figure>
 
 
-## Blender in a notebook
-With `bpy` you have access to the full access to the [Blender Python API](https://docs.blender.org/api/current/index.html). Let's step through examples of rendering a simple rigged model.
+## Blender rendering and display in a notebook
+Seeing Blender integrated into a notebook opens up interesting possibilities for data visualization, teaching materials, and quick prototyping in 3D.
+
+There are a few different ways to render and show the results in the notebook:
+
+* as an image
+* as a video
+* or as a gif
+
+With `bpy` you have full access to the [Blender Python API](https://docs.blender.org/api/current/index.html). Let's step through examples of rendering a simple rigged model.
 
 ```python
 # Import the Blender Python Module
@@ -73,14 +78,6 @@ bpy.ops.wm.open_mainfile(filepath=file_path)
   <img src="{{ site.baseurl }}/images/bpy_scene_change.png" alt="VSCode Python notebook and Blender">
   <figcaption>Blender file load updates</figcaption>
 </figure>
-
-<br>
-## Rendering Options
-There are a few different ways to render and show the results in the notebook:
-
-* as an image
-* as a video
-* or as a gif
 
 <br>
 
@@ -117,7 +114,7 @@ display(Video(filename=video_path, embed=True))
 ```
 
 <figure>
-  <img src="{{ site.baseurl }}/images/raptor.mp4" alt="terrible image of a dinosaur">
+  <img src="{{ site.baseurl }}/images/raptor.mp4" alt="terrible video of a dinosaur">
   <figcaption>Video from the animation of a realistic dinosaur</figcaption>
 </figure>
 
@@ -159,7 +156,7 @@ display(Image(filename=gif_path))
 ```
 
 <figure>
-  <img src="{{ site.baseurl }}/images/raptor.gif" alt="An terrible rendering of a dinosaur">
+  <img src="{{ site.baseurl }}/images/raptor.gif" alt="An terrible gif of a dinosaur">
   <figcaption>An awful animated dinosaur that I modelled and rigged years ago.</figcaption>
 </figure>
 
