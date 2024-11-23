@@ -37,7 +37,7 @@ Meta
 ## Install
 Make sure you've created a Python virtual environment (`.venv`) and activated it before running the commands. Learn more about [virtual environments](https://docs.python.org/3/library/venv.html).
 
-We’ll install `bpy` and `blender_notebook`. The `blender_notebook` package sets up a Jupyter kernel that links a specific Blender instance to the notebook.
+Let's install `bpy` and `blender_notebook`. The `blender_notebook` package sets up a Jupyter kernel that links a specific Blender instance to the notebook.
 
 After creating a python environment in vscode, I opened the terminal and ensured that I was in my .venv and ran:
 
@@ -56,7 +56,7 @@ After installation, I restarted the notebook kernel and Blender opened.
 
 
 ## Blender in a notebook
-With `bpy` you have access to the full access to the [Blender Python API](https://docs.blender.org/api/current/index.html). We will step through examples of rendering a simple rigged model.
+With `bpy` you have access to the full access to the [Blender Python API](https://docs.blender.org/api/current/index.html). Let's step through examples of rendering a simple rigged model.
 
 ```python
 # Import the Blender Python Module
