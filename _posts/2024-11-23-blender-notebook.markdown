@@ -73,7 +73,7 @@ bpy.ops.wm.open_mainfile(filepath=file_path)
   <figcaption>Blender file load updates</figcaption>
 </figure>
 
-```
+```python
 # Set output format for rendering
 bpy.context.scene.render.image_settings.file_format = 'FFMPEG'
 bpy.context.scene.render.ffmpeg.format = 'MPEG4'
