@@ -102,11 +102,12 @@ ffmpeg_command_gif = [
 subprocess.run(ffmpeg_command_gif, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 display(Image(filename=gif_path))
+
 ```
 
 <figure>
   <img src="{{ site.baseurl }}/images/raptor.gif" alt="An terrible rendering of a dinosaur">
-  <figcaption>An awful animated dinosaur that I modeled and rigged years ago.</figcaption>
+  <figcaption>An awful animated dinosaur that I modelled and rigged years ago.</figcaption>
 </figure>
 
 # Wrap up
