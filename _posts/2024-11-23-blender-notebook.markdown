@@ -92,6 +92,7 @@ bpy.context.scene.render.filepath = output_dir + "frame_"
 # Render the animation
 bpy.ops.render.render(animation=True, write_still=True)
 
+# Blender does not export to gif by default, so we will use ffmpeg to convert the frames to gif
 
 # Use ffmpeg to create a GIF from the rendered frames
 gif_path = "./renders/raptor.gif"
