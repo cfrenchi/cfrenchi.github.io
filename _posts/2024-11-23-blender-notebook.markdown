@@ -73,6 +73,41 @@ bpy.ops.wm.open_mainfile(filepath=file_path)
   <figcaption>Blender file load updates</figcaption>
 </figure>
 
+---
+## Render as an image
+```python
+# Render and display as an image
+bpy.ops.render.render()
+bpy.data.images["Render Result"].save_render(filepath="./renders/raptor.png")
+display(Image(filename="./renders/raptor.png"))
+```
+<figure>
+  <img src="{{ site.baseurl }}/images/raptor.png" alt="terrible image of a dinosaur">
+  <figcaption>Still image from the animation of a realistic dinosaur</figcaption>
+</figure>
+
+## Render as a video
+```python
+# Set the render format for the animation
+video_path = "raptor.mp4"
+bpy.context.scene.render.image_settings.file_format = 'FFMPEG'
+bpy.context.scene.render.ffmpeg.format = 'MPEG4'
+bpy.context.scene.render.ffmpeg.codec = 'H264'
+bpy.context.scene.render.ffmpeg.audio_codec = 'NONE'
+bpy.context.scene.render.filepath = video_path
+
+# Render the animation
+bpy.ops.render.render(animation=True)
+
+display(Video(filename=video_path, embed=True))
+```
+
+<figure>
+  <img src="{{ site.baseurl }}/images/raptor.mp4" alt="terrible image of a dinosaur">
+  <figcaption>Still image from the animation of a realistic dinosaur</figcaption>
+</figure>
+
+## Render as a gif
 ```python
 # Set output format for rendering
 bpy.context.scene.render.image_settings.file_format = 'FFMPEG'
