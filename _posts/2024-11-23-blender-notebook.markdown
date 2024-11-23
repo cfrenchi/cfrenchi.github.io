@@ -13,7 +13,7 @@ Seeing Blender integrated into a notebook opens up interesting possibilities for
 
 
 # Rendering Use Case
-With Blender in a notebook, you can embed 3D animations into interactive reports, create dynamic visualizations for scientific research, or even use it for creative coding projects.
+With Blender in a notebook, you can embed rendered 3D animations into reports, create visualizations for scientific research, or even use it for creative coding projects.
 
 This approach allowed me to make a gif from an animation rendering in a pretty cool way.
 
