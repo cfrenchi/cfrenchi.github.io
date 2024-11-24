@@ -38,10 +38,6 @@ Meta
 
 ## Blender rendering and display in a notebook
 
-<figure>
-  <img src="{{ site.baseurl }}/images/bpy-raptor.mov" alt="VSCode Python notebook rendering Blender">
-  <figcaption>Rendering triggered inside of the notebook</figcaption>
-</figure>
 
 Seeing Blender integrated into a notebook opens up interesting possibilities for data visualization, teaching materials, and quick prototyping in 3D.
 
