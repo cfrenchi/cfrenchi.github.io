@@ -37,6 +37,12 @@ Meta
 ```
 
 ## Blender rendering and display in a notebook
+
+<figure>
+  <img src="{{ site.baseurl }}/images/bpy-raptor.mov" alt="VSCode Python notebook rendering Blender">
+  <figcaption>Rendering triggered inside of the notebook</figcaption>
+</figure>
+
 Seeing Blender integrated into a notebook opens up interesting possibilities for data visualization, teaching materials, and quick prototyping in 3D.
 
 There are a few different ways to render and show the results in the notebook:
@@ -47,7 +53,7 @@ There are a few different ways to render and show the results in the notebook:
 
 Let's step through examples of rendering a simple rigged model.
 
-Start by loading a blend file with animations. I used a rigged model of a dinosaur animated with keyframes that I created years ago called `raptor1.blend`.
+Start by loading a blend file with animations. I used a rigged model of a dinosaur animated with keyframes that I created years ago called `raptor1.blend`. This was my first ever rigged model.
 
 ```python
 # Import the Blender Python Module
