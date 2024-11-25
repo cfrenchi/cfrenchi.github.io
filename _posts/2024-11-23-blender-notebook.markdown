@@ -49,7 +49,7 @@ There are a few different ways to render and show the results in the notebook:
 
 Let's step through examples of rendering a simple rigged model.
 
-Start by loading a blend file with animations. I used a rigged model of a dinosaur animated with keyframes that I created years ago called `raptor1.blend`. This was my first ever rigged model.
+Start by loading a blend file with animations. I used a rigged model of a dinosaur animated with keyframes that I created years ago called `raptor1.blend`.
 
 ```python
 # Import the Blender Python Module
@@ -62,6 +62,9 @@ import subprocess
 file_path = "./raptor1.blend"
 bpy.ops.wm.open_mainfile(filepath=file_path)
 ```
+<br>
+
+**The following is the first model I ever created a skeleton for, rigged, and animated through keyframes. Wherever you are in your journey, remember, [*"Embarrassment is the cost of entry."*](https://x.com/EdLatimore/status/1058305553020141570?lang=en)**
 
 <br>
 
