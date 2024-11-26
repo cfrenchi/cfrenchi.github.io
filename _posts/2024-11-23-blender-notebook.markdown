@@ -8,13 +8,15 @@ summary: "Learn how to integrate Blender renderings into Python notebooks using 
 
 ---
 
-I recently saw a demo of blender being used inside of a notebook and was really impressed.
+
 
 Rendering Blender animations directly in Python notebooks bridges the gap between 3D visualization and interactive coding environments. 
 
-[kolibril13](https://kolibril13.github.io/bpy-gallery/n0getting_started/) put together a great doc outlining what this process looks like from **installation to examples**.
+I recently saw a demo of blender being used inside of a notebook and was really impressed. [kolibril13](https://kolibril13.github.io/bpy-gallery/n0getting_started/) put together a great doc outlining what this process looks like from **installation to examples**.
 
-This post will cover what the Blender Python Module (`bpy`) is and how we can use it to render Blender images, videos, and GIFs to display inside of a notebook.
+This post will cover 
+* what the Blender Python Module (`bpy`) is 
+* how we can use it to render Blender images, videos, and GIFs to display inside of a notebook.
 
 <figure>
   <img src="{{ site.baseurl }}/images/bpy_scene_change.png" alt="VSCode Python notebook and Blender">
@@ -101,7 +103,9 @@ display(Video(filename=video_path, embed=True))
 ```
 
 <figure>
-  <img src="{{ site.baseurl }}/images/raptor.mp4" alt="terrible video of a dinosaur">
+  <video width="100%" preload="auto" muted controls>
+      <source src="{{ site.baseurl }}/images/raptor.mp4" type="video/mp4"/>
+  </video>
   <figcaption>Video from the animation of a realistic dinosaur</figcaption>
 </figure>
 
